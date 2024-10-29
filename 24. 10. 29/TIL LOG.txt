@@ -1,0 +1,2 @@
+1. Oracle Sequence 일정 자릿수 채우기 Issue 해결
+2. Git issue 작성법 학습
