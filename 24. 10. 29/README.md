@@ -41,8 +41,7 @@ PhotoShop 프로그램을 사용해서 이미지 파일로 기록 및 저장하�
 
 개선 방안에 대해 알아보던 중 Git Repository의 ReadMe 및 Issue 기능을 활용해보기 위해 알아봄.
 
-#참고 [https://lsh424.tistory.com/37](url)
-#참고2 [https://worthpreading.tistory.com/83](url)
+[[참고]](https://lsh424.tistory.com/37) / [[참고2]](https://worthpreading.tistory.com/83)
 
 첨부된 링크의 참고글을 활용하여 기존 방식에서 Issue 게시글 등록 후 수정/코멘트 추가 형식으로 방식을 수정함.
 
