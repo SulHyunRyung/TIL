@@ -1,2 +1,12 @@
 1. Oracle Sequence 일정 자릿수 채우기 Issue 해결
-2. Git issue 작성법 학습
+* 원하는 출력 방식 ex ) U00001
+* 해결 방안 | RPAD & LPAD 및 || (Concat) 함수 사용
+* 최종 출력 결과 ex ) U00001
+해당 이슈 풀이과정 ) https://github.com/SulHyunRyung/TIL/issues/1
+
+
+2. Git issue & ReadMe.md 작성법 학습
+* 기존 TIL 작성 방식에 있어 불편함을 느낌.
+* 해결 방안 | Git Issue  &  ReadMe 작성법 학습
+* 최종적으로 기존 작성 방식에 비해 효율, 가시성이 올라감.
+해당 이슈 풀이과정 ) https://github.com/SulHyunRyung/TIL/issues/2
