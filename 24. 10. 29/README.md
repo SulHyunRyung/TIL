@@ -1,4 +1,7 @@
 # 2024. 10. 29 TIL
+
+
+ # Issue 1.
  
 Side Project 1 (INSIDE) 프로젝트 진행 중
 USER 식별 코드인 UID의 원하는 구성 ( ex : U00001 ) 형태처럼
@@ -28,4 +31,7 @@ Try 2 - Result
 원하는 값을 출력함.
 
 해당 이슈 풀이과정 ) https://github.com/SulHyunRyung/TIL/issues/1
+
+# Issue 2.
+
 
