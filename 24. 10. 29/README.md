@@ -11,7 +11,9 @@ Try 1. 이미지처럼 시퀀스 생성부터 자릿수 지정.
 * ER1 시스템 상으로 구현되지 않은 기능.
  
 이후 해당 기능 명령어 탐색 중 LPAD&RPAD 및 || (CONCAT 함수) 명령어 발견.
+
 #참고 [https://ajdahrdl.tistory.com/152](url)
+
 #참고2 [https://okky.kr/questions/357425](url)
 
 
