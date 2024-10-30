@@ -68,6 +68,6 @@ PhotoShop 프로그램을 사용해서 이미지 파일로 기록 및 저장하�
 * SRS 구성 및 세부사항 조정
 * 각 기능 테이블 구성
 
-
+해당 프로젝트 진행 현황 ) [[프로젝트 진행 현황]](https://github.com/SulHyunRyung/INSIDE/tree/main)
 
 
