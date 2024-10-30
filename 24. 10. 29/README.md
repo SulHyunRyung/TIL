@@ -5,6 +5,7 @@
  
 Side Project 1 (INSIDE) 프로젝트 진행 중
 USER 식별 코드인 UID의 원하는 구성 ( ex : U00001 ) 형태처럼
+
 특정 자릿수 + 문자열을 포함하려고 구현하던 중 이슈 발생.
 
 
@@ -37,6 +38,7 @@ TIL 작성 중 기존 작성 방식이 너무 과정이 복잡하고 불편함�
 ![origin](https://github.com/user-attachments/assets/38b7f1c6-fe52-41af-ac33-c0553e7bde8c)
 
 기존 작성 방식은 이슈 발생 시 첨부 이미지처럼 해당 이슈의 대한 이미지를 따고,
+
 PhotoShop 프로그램을 사용해서 이미지 파일로 기록 및 저장하는 시스템.
 
 개선 방안에 대해 알아보던 중 Git Repository의 ReadMe 및 Issue 기능을 활용해보기 위해 알아봄.
@@ -54,6 +56,7 @@ PhotoShop 프로그램을 사용해서 이미지 파일로 기록 및 저장하�
 첫 적용 예시 ) [https://github.com/SulHyunRyung/TIL/issues/1](url)
 
 최종적으로 기존 PhotoShop 작업 방식보다 작업 과정을 줄일 수 있었음.
+
 추가적으로 가시성이 올라가 추후 확인용으로도 상대적으로 만족스러운 결과라고 생각함.
 
 
