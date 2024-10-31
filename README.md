@@ -2,10 +2,12 @@
 
 # 2024년 10월 29일 
 
-## Issue 1. Oracle Sequence 사용 중 일정 자릿수 채우기 및 문자열 포함 구현 [ 발생 & 해결 완료 ]
+## 1. Oracle Sequence 사용 중 일정 자릿수 채우기 및 문자열 포함 구현 [ 발생 & 해결 완료 ]
+* [Issue#1](https://github.com/SulHyunRyung/INSIDE/issues/1)
 
-## Issue 2. TIL 작성 관련 작업 최적화 및 최소화 [ 발생 & 해결 완료 ]
-
+## 2. TIL 작성 관련 작업 최적화 및 최소화 [ 발생 & 해결 완료 ]
+* [Issue#2](https://github.com/SulHyunRyung/INSIDE/issues/2)
+* 
 ## 3. Side Project - INSIDE 진행 [[ 프로젝트 진행 현황 ]](https://github.com/SulHyunRyung/INSIDE/tree/main)
 * 프로젝트 Git Setting
 * Logo 제작
@@ -20,6 +22,7 @@
 * 쿼리 및 소스 확보
 
 ## 2. DB TABLE 간 참조를 위한 FK 설정 방식
+* [Issue#3](https://github.com/SulHyunRyung/INSIDE/issues/3)
 
 # 2024년 10월 31일
 
@@ -28,4 +31,4 @@
 * 사용되는 테이블의 유효성 체크 후 구조 변경
 
 ## 2. 기능 메서드의 트랜잭션 처리
-
+* [Issue#4](https://github.com/SulHyunRyung/INSIDE/issues/4)
