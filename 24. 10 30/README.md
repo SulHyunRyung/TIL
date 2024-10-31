@@ -11,6 +11,7 @@
 2. DB TABLE 간 참조를 위한 FK 설정 방식
 
 Side Project [ Inside ] 진행 중,
+
 POST_LIST 작성 중 USER_ID 를 외래키로 가져와야함.
 
 [[참고]](https://developmentrecord.tistory.com/entry/Oracle-%EC%99%B8%EB%9E%98-%ED%82%A4Foreign-Key-FK-%EC%83%9D%EC%84%B1-%EC%B6%94%EA%B0%80-%EC%82%AD%EC%A0%9C-SQL)
