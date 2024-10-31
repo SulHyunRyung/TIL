@@ -1,6 +1,6 @@
 # 2024. 10. 30 TIL
 
-1. Side Project - Inside
+##1. Side Project - Inside
 사이드 프로젝트 Inside 프로그램 제작 진행 중
 * 전체 구조 형성 및 UI 스케치
 * 모델 패키지 생성 및 세부사항 조정
@@ -8,7 +8,7 @@
 
 해당 프로젝트 진행 현황 ) [[프로젝트 진행 현황]](https://github.com/SulHyunRyung/INSIDE/tree/main)
 
-2. DB TABLE 간 참조를 위한 FK 설정 방식
+##2. DB TABLE 간 참조를 위한 FK 설정 방식
 
 Side Project [ Inside ] 진행 중,
 
