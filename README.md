@@ -32,3 +32,19 @@
 
 ## 2. 기능 메서드의 트랜잭션 처리
 * [Issue#4](https://github.com/SulHyunRyung/INSIDE/issues/4)
+
+# 2024년 11월 01일
+
+## 1. Side Project - INSIDE 진행 [[ 프로젝트 진행 현황 ]](https://github.com/SulHyunRyung/INSIDE/tree/main)
+* Login & Register Frame 제작 및 기능 구현(연동)
+
+# 2024년 11월 02일
+
+## 1. Side Project - INSIDE 진행 [[ 프로젝트 진행 현황 ]](https://github.com/SulHyunRyung/INSIDE/tree/main)
+* UserInfoUpdate(회원 정보 수정) 창 GUI 구현 및 기능 구현
+
+# 2024년 11월 04일
+
+## 1. Side Project - INSIDE 진행 [[ 프로젝트 진행 현황 ]](https://github.com/SulHyunRyung/INSIDE/tree/main)
+* BoardFrame(게시판) GUI 구현
+* 회원 가입, 회원 정보 수정 본인 인증, 회원 정보 수정 란에서 비밀번호 생성 및 수정에서 비밀번호 Hash화 하여 암호화 진행.
