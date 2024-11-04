@@ -49,3 +49,12 @@
 * BoardFrame(게시판) GUI 구현
 * 회원 가입, 회원 정보 수정 본인 인증, 회원 정보 수정 란에서 비밀번호 생성 및 수정에서 비밀번호 Hash화 하여 암호화 진행.
 * 회원 가입, 회원 정보 수정 관련 예외 사항 처리
+
+## 2. 비밀번호 보안 / Hashing
+* [Issue#5](https://github.com/SulHyunRyung/INSIDE/issues/5)
+
+## 3. Issue. Password Hashing 중 데이터 삽입 오류
+* [Issue#6](https://github.com/SulHyunRyung/INSIDE/issues/6)
+
+## 4. BoardFrame GUI 구성 중 한글 폰트 깨짐 현상
+* [Issue#6](https://github.com/SulHyunRyung/INSIDE/issues/6)
