@@ -48,3 +48,4 @@
 ## 1. Side Project - INSIDE 진행 [[ 프로젝트 진행 현황 ]](https://github.com/SulHyunRyung/INSIDE/tree/main)
 * BoardFrame(게시판) GUI 구현
 * 회원 가입, 회원 정보 수정 본인 인증, 회원 정보 수정 란에서 비밀번호 생성 및 수정에서 비밀번호 Hash화 하여 암호화 진행.
+* 회원 가입, 회원 정보 수정 관련 예외 사항 처리
