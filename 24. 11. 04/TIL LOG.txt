@@ -1,0 +1,12 @@
+1. Side Project - Inside
+
+사이드프로젝트 Inside 프로그램 제작 진행 중.
+* BoardFrame(게시판) GUI 구현
+* 회원 가입, 회원 정보 수정 본인 인증, 회원 정보 수정 란에서 비밀번호 생성 및 수정에서 비밀번호 Hash화 하여 암호화 진행.
+* 회원 가입, 회원 정보 수정 관련 예외 사항 처리
+
+2. 비밀번호 보안 / Hashing
+
+3. Password Hashing 중 데이터 삽입 오류 처리
+
+4. BoardFrame GUI 구성 중 한글 폰트 깨짐 현상
