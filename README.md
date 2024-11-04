@@ -57,4 +57,4 @@
 * [Issue#6](https://github.com/SulHyunRyung/INSIDE/issues/6)
 
 ## 4. BoardFrame GUI 구성 중 한글 폰트 깨짐 현상
-* [Issue#6](https://github.com/SulHyunRyung/INSIDE/issues/6)
+* [Issue#7](https://github.com/SulHyunRyung/INSIDE/issues/7)
