@@ -1,0 +1,12 @@
+## Servlet 기초
+
+* Servlet은 서버사이드기능을수행하고, JSP는클라이언트사이드기능을수행
+* Servlet 클래스는클라이언트요청을DB에전송하고, 응답을클라이언트에전송하는
+컨트롤러역할을수행
+* Servlet은 HttpServlet, HttpServletRequest, HttpServletResponse 클래스를 제공
+* Servlet 클래스URL 매핑방법은web.xml 파일설정과@WebServlet 설정두가지
+* ServletContainer는 클라이언트에서Servlet 클래스호출시객체를생성
+* 생성된Servlet 객체는재사용
+* service()는 HTTP 요청에대해응답하는메서드
+* service()는 doGet()/doPost()로 대체 가능
+* destroy()는 서버가정상종료될때호출
