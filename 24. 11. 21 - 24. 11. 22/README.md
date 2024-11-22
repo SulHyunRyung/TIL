@@ -2,7 +2,7 @@
 
 ## Session 활용 과제 프로젝트 진행
 
-![Session_활용_과제_프로젝트](https://github.com/SulHyunRyung/SessionControl)
+[Session_활용_과제_프로젝트](https://github.com/SulHyunRyung/SessionControl)
 
 # Session 활용 데이터 전달 활용 프로젝트
 * Session을 활용하여, 회원 정보를 저장 및 활용을 연습하는 미니 프로젝트
