@@ -1,5 +1,3 @@
-# 24. 11. 27
-
 ## Ajax (Asynchronous JavaScript And XML)
 		
 ### Ajax를 사용하는 이유
