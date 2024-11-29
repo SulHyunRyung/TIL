@@ -1,6 +1,6 @@
 # 24. 11. 28
 
-## Ajax xxxxx
+## Ajax
 
 ### $.ajax()
 * ajax load 메소드를 간략화한 메소드
