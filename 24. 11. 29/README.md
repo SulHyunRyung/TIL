@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # 24. 11. 29
 
 ## WEB-INF (Web Information)
@@ -22,3 +23,6 @@
 ### detail.jsp
 * index.jsp(list)에서 받아온 req 데이터로 DB에서 작성자,제목,내용,작성일,BoardId 등의 데이터를 표시함
 
+=======
+!!
+>>>>>>> Stashed changes
