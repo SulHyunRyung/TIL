@@ -1,7 +1,7 @@
 # 24. 11. 28
 
 ## Ajax
-## 2222
+
 ### $.ajax()
 * ajax load 메소드를 간략화한 메소드
 * 기본형태
@@ -14,7 +14,7 @@
 * success : 호출 성공 시 콜백 내용
 
 ### 사용 예시
-
+```
 $('button').click(function(){
 	$.ajax({
 		type : "get",
@@ -29,17 +29,17 @@ $('button').click(function(){
 		}
 	});	// End ajax
 }); // End btn.click
-
+```
 ### Get
-
+```
 $('button').click(function(){
 	$.get('url', function(data, status){
 		alert('Data : ' + data + "\n status : " + status);
 	}); // End Get
 }); // End btn.click
-
+```
 ### Post
-
+```
 $('button').click(function(){
 	$.post("url", 
 			{
@@ -50,10 +50,10 @@ $('button').click(function(){
 				alert("Data : " + data + "\n status : " + status);
 			}); // End post()
 }); // End btn.click
-			
+```			
 
 ### Ajax로 JSON 데이터 호출하기
-
+```
 $.ajax({
 	type: "get",
 	url : "06_json_test.txt",
@@ -69,9 +69,9 @@ $.ajax({
 		$("#output").html(output);
 	} // End Success
 }); // End Ajax
-
+```
 ### Servlet과 JSON 간의 통신 방법 
-
+```
 (InfoServelt.java)
 
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -97,7 +97,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 	// JSON 객체 전송
 	response.getWriter().append(jsonArray.toString());
 }
+```
 
+```
 (07_json_example.html)
 
 getData();
@@ -114,6 +116,7 @@ function getData() {
 		$('#info').html(list);
 	}); // End getJSON
 } // End getData
+```
 
 ## MVC(Model-View-Controller) Pattern
 
