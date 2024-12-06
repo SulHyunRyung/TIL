@@ -217,6 +217,7 @@ req.setAttribute("pageMaker", pageMaker);
 ```
 * Servelt, Pagecriteria, PageMaker의 코드들을 활용하여 페이징 처리 
 
+```
 ### 기능 로직 정리
 1) 전체 게시글을 n개부터 n개까지 분리
 2) 페이징 넘버 start, end을 파라미터로 받음
@@ -427,3 +428,4 @@ private void replyList(HttpServletRequest req, HttpServletResponse res) throws S
 	}
 
 * 수정과 비슷한 방식으로 replyId에 접근 및 데이터 송수신 후 delete 실행.
+```
