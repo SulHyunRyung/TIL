@@ -33,7 +33,7 @@
 
 ### Mapper.xml / Mapper interface
 <pre>
-* <select>, <insert>, <update>, <delete> : SQL 쿼리 정의 태그* 
+* <select>, <insert>, <update>, <delete> : SQL 쿼리 정의 태그 
 </pre>
 * 속성 :
 1) id : Mapper 인터페이스 메서드 매핑 역할.
