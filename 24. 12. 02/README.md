@@ -194,7 +194,7 @@ req.setAttribute("pageMaker", pageMaker);
 </c:forEach>
 
 [페이징 리스트]
-
+```
 <ul>
     <c:if test="${pageMaker.hasPrev}">
         <li>
@@ -214,7 +214,7 @@ req.setAttribute("pageMaker", pageMaker);
         </li>
     </c:if>
 </ul>
-
+```
 * Servelt, Pagecriteria, PageMaker의 코드들을 활용하여 페이징 처리 
 
 ### 기능 로직 정리
