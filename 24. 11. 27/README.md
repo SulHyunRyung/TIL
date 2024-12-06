@@ -10,7 +10,7 @@
 ## XML ( Extensible Markup Language) Http
 
 ### XMLHttp 사용 예시
-
+```
 <div id="output">
 	<h2>XMLHttpRequest Object</h2>
 	<button onclick="loadDoc()">내용변경</button>
@@ -34,8 +34,10 @@
         xhttp.send();
 }
 </script>
+```
 
 * 01_demo_test,txt
+```
 <h2>텍스트</h2>
 <p id="p1">P텍스트</p>
 
@@ -47,17 +49,20 @@
 
 이미지와 같이 버튼을 클릭할 경우 01_demo_test.txt 파일의 내용으로 변경되며,
 Console 창에 State와 Status, txt의 내용이 출력된다.
+```
 
 ### Get/Post 요청 방식 예시
 
 * 공통
+```
 <h2>XMLHttpRequest 요청</h2>
 <button onclick="loadDocGet()">get 요청</button>
 <button onclick="loadDocPost()">post 요청</button>
 <p id="output"></p>
+```
 
 * Get방식
-
+```
 function loadDocGet() {
 	let xhttp = new XMLHttpRequest(); // Browser 내장 request 객체
 	xhttp.onreadystatechange = function() {
@@ -69,9 +74,10 @@ function loadDocGet() {
 	xhttp.open("GET", "02_date.jsp?method=get&content=Hello", true);
 	xhttp.send();
 }
+```
 
 * Post방식
-
+```
 function loadDocPost() {
 	let xhttp = new XMLHttpRequest(); // Browser 내장 request 객체
 	xhttp.onreadystatechange = function() {
@@ -84,9 +90,10 @@ function loadDocPost() {
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send("method=post&content=Hllo");
 }
+```
 
 * 데이터 사용 예시
-
+```
 <h2>XML 파일 호출</h2>
 <button onclick="loadDoc()">CD 컬렉션 호출</button>
 <br>
@@ -123,6 +130,7 @@ function loadDocPost() {
     	document.getElementById("output").innerHTML = table;
     }
 </script>
+```
 
 ### jQuery Ajax
 * jQuery는 Ajax의 다양한 기능을 사용할 수 있음
