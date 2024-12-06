@@ -49,3 +49,9 @@
 
 
 ### Board, Reply MVC drawing
+
+### Board_MVC
+![Board_MVC](https://github.com/user-attachments/assets/edc65e29-b072-4e6d-ba58-12d33b4caf41)
+
+### Reply_MVC
+![Reply_MVC](https://github.com/user-attachments/assets/adcfaf46-5d4e-4f08-b86b-1bee80a40406)
