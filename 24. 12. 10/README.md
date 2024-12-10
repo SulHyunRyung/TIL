@@ -82,7 +82,9 @@
 ## 24. 12. 10 : 첫 회의록
 
 ## Subject 
-* 맛집 리뷰 플랫폼https://www.siksinhot.com/
+* 맛집 리뷰 플랫폼
+
+## [[Referance]](https://github.com/SulHyunRyung/TIL/blob/main/24.%2012.%2010/Referance.txt)
 
 ### 기능
 
