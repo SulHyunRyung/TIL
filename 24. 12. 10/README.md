@@ -84,7 +84,7 @@
 ## Subject 
 * 맛집 리뷰 플랫폼
 
-## [[Referance]](https://github.com/SulHyunRyung/TIL/blob/main/24.%2012.%2010/Referance.txt)
+## [[Reference]](https://github.com/SulHyunRyung/TIL/blob/main/24.%2012.%2010/Reference.txt)
 
 ### 기능
 
