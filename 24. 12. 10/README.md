@@ -76,3 +76,42 @@
 ### 방어 기능 구현 순서
 * CSRF 공격 보호 기능 구성 : SecurityConfig.java, login.jsp, admin.jsp
 * XSS 공격 보호 기능 설정 : send.jsp, output.jsp, ExampleController.java SecurityConfig.java
+
+# Team Project (Untitled)
+
+## 24. 12. 10 : 첫 회의록
+
+## Subject 
+* 맛집 리뷰 플랫폼https://www.siksinhot.com/
+
+### 기능
+
+1) 회원 관리 ( Admin / Member / [?] )
+* 회원 ID/ PW/ 연락처/ 닉네임(사용자명)
+* 회원 등록/ 수정/ 조회/ ID.PW 찾기/ 탈퇴
+  
+2) 맛집 관리
+* ID/ 식당 이름/ 사업자/ 카테고리/ 주소/ 연락처/ 추천수/ 리뷰수
+
+<< 사업주 전용 테이블? >>
+
+
+
+3) 리뷰 관리
+* Review ID/ 작성자(회원명)/ 리뷰내용/ 작성일/ 이미지(url)/ Tag ID
+* Tag ID : 키워드 태그
+
+4) 예약 관리
+* 
+
+### 구상 중인 페이지
+index.jsp (main)
+ 
+
+### 정리
+1) 맛집 추천 및 리뷰 작성, 조회, 예약이 가능한 사이트
+2) 기본적인 회원 관리, 식당 관리, 리뷰 관리 구조 구상
+3) 세부 사항으로 리뷰 작성 시 키워드 태그를 설정할 수 있도록 추가
+4) 예약 시스템 구현 구상 중에 있음.
+
+* 다음 회의 진행 때 사업주 전용 테이블을 제시해봐야겠음. 
