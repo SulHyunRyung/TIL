@@ -23,6 +23,7 @@
 ### 사이트 관리자
 1) 등록된 게시글 삭제할 수 있다.
 2) 등록된 게시글의 리뷰를 삭제할 수 있다.
+3) 신고된 게시글을 조회하여 신고 취소/ 리뷰 삭제가 가능하다.
 
 
 ### 업장 관리
@@ -93,4 +94,5 @@
 ### TABLE
 회원 관리/ 업장 관리/ 메뉴/ 리뷰/ 예약 관리/ *주소
 
-![ERD](https://github.com/user-attachments/assets/c4ea8095-a73b-4c52-a1dd-fd85bbf1c123)
+![ERD](https://github.com/user-attachments/assets/a15ffa43-3874-4918-8859-819dc980c88a)
+    
