@@ -94,5 +94,5 @@
 ### TABLE
 회원 관리/ 업장 관리/ 메뉴/ 리뷰/ 예약 관리/ *주소
 
-![ERD](https://github.com/user-attachments/assets/a15ffa43-3874-4918-8859-819dc980c88a)
+![ERD](https://github.com/user-attachments/assets/6b627beb-9d6a-470b-bee0-1e799531696c)
     
