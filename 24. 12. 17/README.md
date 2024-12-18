@@ -1,4 +1,4 @@
-# 24. 12. 16
+# 24. 12. 17
 
 ## Team Project (Eat Platfrom) 진행
 
