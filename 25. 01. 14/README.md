@@ -27,23 +27,23 @@ let mapContainer = document.getElementById('map'),
 하지만 정확도가 떨어질 수 있음을 확인.
 
 $.ajax({
-	url: "https://api.vworld.kr/req/address?",
-	type: "GET",
-	dataType: "jsonp",
-	data: {
-		service: "address",
-		request: "GetCoord",
-		version: "2.0",
-		crs: "EPSG:4326",
-		type: "ROAD",
-		address: "서울특별시 강남구 봉은사로 524",
-		format: "json",
-		errorformat: "json",
-		key: "1DF985C8-77FD-3F44-981C-8B1EA1BCC7D9"
-	},
-	success: function (result) {
-		console.log(result);
-	}
+ url: "https://api.vworld.kr/req/address?",
+ type: "GET",
+ dataType: "jsonp",
+ data: {
+  service: "address",
+  request: "GetCoord",
+  version: "2.0",
+  crs: "EPSG:4326",
+  type: "ROAD",
+  address: "서울특별시 강남구 봉은사로 524",
+  format: "json",
+  errorformat: "json",
+  key: "1DF985C8-77FD-3F44-981C-8B1EA1BCC7D9"
+ },
+ success: function (result) {
+  console.log(result);
+ }
 });  
 
 국토교통부에서 제공하는 지오코더 API를 시적용 시도.
@@ -92,10 +92,134 @@ EPSG:4326 EPSG:4019 같이 지도에서 요구하는 포맷과 다름을 확인
 서버 입장에서도 적은 데이터 + 순차적인 로드를 통해 부하를 줄일 수 있을 것이라 판단.
 
 최종적으로는 넘버링 + 스크롤 lazy-load 방식을 혼합하여 채용.
+
+     let currentPage = 1;
+     const pageSize = 6;
+     let scrollPage = 1;
+     let totalDataCount = 0;
+     let loadedDataCount = 0;
+     let loading = false;
+     const maxItemsPerPage = 30;
+
+     function loadStores(pageNum) {
+         if (loading) return;
+         loading = true;
+
+         $.ajax({
+             url: '/web/store/map/list',
+             type: 'GET',
+             data: {
+                 pageNum: pageNum,
+                 keyword: $('#keywordInput').val()
+             },
+             success: function(response) {
+                 appendStoresToPage(response.recentStores);
+                 totalDataCount = response.totalStoresCount;
+                 updatePagination(totalDataCount, pageNum);
+                 loading = false;
+             },
+             error: function(xhr, status, error) {
+                 console.error('Data load failed', status, error);
+                 loading = false;
+             }
+         });
+     }
+
+     loadStores(currentPage);
+
+     function updatePagination(totalDataCount, currentPage) {
+         const totalPages = Math.ceil(totalDataCount / maxItemsPerPage);
+
+         $('#pagination').empty();
+
+         for (let i = 1; i <= totalPages; i++) {
+             const pageButton = $('<button>')
+                 .text(i)
+                 .on('click', function() {
+                     if (i === 1) {
+                         currentPage = 1;
+                         loadedDataCount = 0;
+                         scrollPage = 1;
+                     } else {
+                         currentPage = (i - 1) * 6;
+                         loadedDataCount = (currentPage - 2) * pageSize;
+                         scrollPage = currentPage;
+                     }
+                     $('#storeList').empty();
+                     loadStores(currentPage);
+                 });
+
+             $('#pagination').append(pageButton);
+         }
+
+         $('#currentPage').text(currentPage);
+     }
+
+     function appendStoresToPage(stores) {
+         if (Array.isArray(stores)) {
+             stores.forEach(function(store) {
+                 if (loadedDataCount >= maxItemsPerPage) {
+                     return;
+                 }
+
+                 const storeHtml = 
+                     '<div class="store">' +
+                         '<h3>' + store.storeName + '</h3>' +
+                         '<p>' + (store.description && store.description.trim() !== '' ? store.description : '작성된 소개 글이 없습니다.') + '</p>' +
+                     '</div>';
+
+                 $('#storeList').append(storeHtml);
+                 loadedDataCount += 1;
+             });
+
+             if (loadedDataCount >= totalDataCount || loadedDataCount >= maxItemsPerPage) {
+                 $(document).off('scroll');
+             }
+         } else {
+             console.error('Invalid stores data:', stores);
+         }
+     }
+
+     $('#storeList').on('scroll', function() {
+         if (($(this).scrollTop() + $(this).height() >= $(this)[0].scrollHeight - 50) && loadedDataCount % 6 == 0) {
+             if (loadedDataCount < totalDataCount && !loading && loadedDataCount < maxItemsPerPage) {
+                 const nextPage = scrollPage + 1;
+
+                 loadStores(nextPage);
+                 scrollPage = nextPage;
+             }
+         }
+
+         if (loadedDataCount >= totalDataCount || loadedDataCount >= maxItemsPerPage) {
+             $(document).off('scroll');
+         }
+     });
+
+     $('#searchButton').click(function() {
+         currentPage = 1;
+         loadedDataCount = 0;
+         $('#storeList').empty();
+         loadStores(currentPage);
+     });
+
+해당 코드를 사용해 기존에 있던 Paging 처리 코드 및 쿼리를 활용하여 구현,
+해당 페이지에선 
+1회 당 6개의 데이터를 1 컨테이너 당 최대 30개까지 불러오도록 설정하였다.
+
+진행하면서 어려웠던 부분은 아무래도
+스크롤, 클릭 두 가지 방식으로 페이징 처리를 동시에 적용하려고 하니
+우선 기준이 되는 currentPage의 값을 변경하거나 초기화 하는 부분에서 에러를 많이 겪었던 것 같다.
+
+이후로는 실질적으로 6개의 데이터 한 묶음이 1페이지로 적용되기 때문에
+스크롤 될 때의 페이지와 버튼을 클릭했을 때의 페이지가 사실상 일치하지 않아야 하는 부분에서
+수식을 쓰는데 많은 에러가 있었다.
+예시로 페이징 버튼 같은 경우는 숫자로는 1,2,3 이렇게 표시 되겠지만
+실상 클릭 했을 때 컨트롤 되야 하는 pageNum은 *6 - 1이라고 생각해야 하니 말이다.
+그런 수식 문제를 해결하고 나니 어느 정도의 예외 처리를 진행한 후에 이런 코드가 완성되었다.
+스크롤 페이징 같은 경우는 처음 시도하는 부분이다보니
+코드가 많이 지저분해지고 서툴게 처리한 부분이 있었지만,
+효율성을 생각하고 진행해볼 수 있는 기회였던 것 같아 나름대로 만족하고 있는 것 같다.
 ```
-
-
-
 
 * 그 외 구현 사항
 
