@@ -11,8 +11,10 @@
 /management/reserv/list.jsp
 /management/store/list.jsp
 /store/newStore.jsp
+/management/reserv/list.jsp /management/store/list.jsp /store/newStore.jsp
 
 ### css
 
 /resources/css/management/store/list.css
 /store/newStore.css
+/resources/css/management/store/list.css /store/newStore.css
